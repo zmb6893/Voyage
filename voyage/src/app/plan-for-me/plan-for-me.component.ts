@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { apiKey } from './api-key';
 
 @Component({
   selector: 'app-plan-for-me',
