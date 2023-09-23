@@ -1,4 +1,4 @@
-import { Activity } from "./Activity.model";
+import { Activity } from "./activity.model";
 
 export interface Trip {
     id: number;
