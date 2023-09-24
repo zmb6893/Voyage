@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Trip } from '../../models/trip.model';
 
 @Component({
   selector: 'app-home',

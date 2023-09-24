@@ -4,6 +4,8 @@ import { Observable, of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { Trip } from './models/trip.model';
 import { throwError } from 'rxjs';
+import { Activity } from './models/activity.model';
+import { Router } from 'express';
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +26,35 @@ export class TripService {
     if (index !== -1) {
       this.trips[index] = updatedTrip;
       return of(updatedTrip);
+    } else {
+      return throwError('Trip not found');
+    }
+  }
+
+  addActivity(activity: Activity, tripId: string) {
+    const trip = this.getTripById(tripId);
+  
+    trip.subscribe((trip) => {
+      if (trip) {
+        // Check if activities is an array or initialize it as an empty array
+        if (!Array.isArray(trip.activities)) {
+          trip.activities = [];
+        }
+        trip.activities.push(activity);
+        console.log('Updated Trip:', trip);
+      } else {
+        console.error('Trip not found');
+      }
+    });
+  }
+  
+  
+
+  getTripById(id: string): Observable<Trip | undefined> {
+    const trip = this.trips.find((t) => t.id === id);
+
+    if (trip) {
+      return of(trip);
     } else {
       return throwError('Trip not found');
     }

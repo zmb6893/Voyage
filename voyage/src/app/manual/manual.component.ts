@@ -4,6 +4,7 @@ import { Trip } from '../../models/trip.model';
 import { Router } from '@angular/router';
 import { TripService } from '../../trip.service';
 import { v4 as uuidv4 } from 'uuid';
+import { Activity } from '../../models/activity.model';
 
 @Component({
   selector: 'app-manual',
@@ -26,7 +27,8 @@ export class ManualComponent implements OnInit {
       name: ['', Validators.required],
       location: ['', Validators.required],
       budget: [0, [Validators.required, Validators.min(0)]],
-      private: [false]
+      private: [false],
+      activities: [Array<Activity>]
     });
   }
 
@@ -34,15 +36,18 @@ export class ManualComponent implements OnInit {
     if (this.tripForm.valid) {
       const tripData: Trip = this.tripForm.value as Trip;
       this.tripService.saveTrip(tripData).subscribe(
-        () => {
-          console.log('Trip saved successfully: ', tripData);
+        (savedTrip) => {
+          console.log('Trip saved successfully: ', savedTrip);
+  
+          // Pass the saved Trip ID as a query parameter to the activity-form component
+          this.router.navigate(['/activity-form'], {
+            queryParams: { tripId: savedTrip.id }
+          });
         },
         (error) => {
           console.error('Error saving trip:', error);
         }
       );
     }
-
-    this.router.navigate(['/activity-form']);
   }
 }
