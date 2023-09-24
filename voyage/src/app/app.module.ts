@@ -20,6 +20,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LeftPanelComponent } from './left-panel/left-panel.component';
 import { ChoosePlanComponent } from './choose-plan/choose-plan.component';
 import { TripCardComponent } from './trip-card/trip-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { TripCardComponent } from './trip-card/trip-card.component';
     MatButtonModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
