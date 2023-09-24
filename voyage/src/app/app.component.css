@@ -1,3 +1,8 @@
+.trips h1 {
+    margin-top: .5rem;
+    color:#F5F5F5;
+    text-align: center;
+}
 .main {
     margin: 0px;
     padding: 0px;
@@ -100,7 +105,22 @@
     background-color: #028090;
     border-radius: 30px;
     height:15rem;
-    
+}
+.upcoming-events {
+    background-image: url('../assets/BostonLayered.png');
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color:#F5F5F5;
+}
+
+.event-text {
+    margin-left: 4rem;
+    margin-top: 1rem;
+    flex-direction: column;
+    display: flex;
 }
 
 .trips {
@@ -144,4 +164,28 @@
     border-radius: 30px;
     background: #028090;
     height: 12rem;
+}
+
+.trips-container {
+    border-radius: 30px;
+    background: #039DB0;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right:3rem;
+    height: 27rem;
+}
+
+.trip-collapsed {
+    margin-top: 1rem;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    height: 3rem;
+}
+
+.trip-expanded {
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    height:13rem;
+    margin-top: 1rem;
 }
