@@ -52,7 +52,7 @@ import { ActivityCardComponent } from './activity-card/activity-card.component';
     BrowserAnimationsModule,
     MatCheckboxModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatSlideToggleModule
