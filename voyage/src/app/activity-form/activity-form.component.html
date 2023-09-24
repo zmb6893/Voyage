@@ -1,16 +1,38 @@
-<form [formGroup]="activityForm" (ngSubmit)="onSubmit()">
-    <mat-form-field>
-      <mat-label>Name</mat-label>
-      <input matInput formControlName="name" placeholder="Activity Name" required>
-    </mat-form-field>
-  
-    <mat-form-field>
-      <mat-label>Price</mat-label>
-      <input matInput formControlName="price" placeholder="Price" type="number" required>
-    </mat-form-field>
-  
-    <!-- Add form controls for time, location, etc. here -->
-    
-    <button mat-raised-button color="primary" type="submit">Submit</button>
-  </form>
-  
+
+
+<div class="main">
+  <app-nav-bar></app-nav-bar>
+  <div class="content">
+      <app-left-panel></app-left-panel>
+      <div class="box-2">
+          <div class="choice-container">
+              <h1>New Trip</h1>
+              <p>Plan By Yourself</p>
+              <form [formGroup]="activityForm" (ngSubmit)="onSubmit()" class="card">
+                <h1>Add an Activity</h1>
+                <mat-form-field appearance="outline" style="font-size: 30px;">
+                  <mat-label>Name</mat-label>
+                  <input matInput formControlName="name" placeholder="Activity Name" required>
+                </mat-form-field>
+
+                <h1>Where is it?</h1>
+                <mat-form-field appearance="outline" style="font-size: 30px;">
+                  <mat-label>City, State</mat-label>
+                  <input matInput formControlName="location" placeholder="Location" type="String" required>
+                </mat-form-field>
+              
+                <h1>How much does it cost?</h1>
+                <mat-form-field appearance="outline" style="font-size: 30px;">
+                  <mat-label>Price</mat-label>
+                  <input matInput formControlName="price" placeholder="Price" type="number" required>
+                </mat-form-field>
+              
+                <!-- Add form controls for time, location, etc. here -->
+                
+                <button mat-raised-button color="primary" type="submit">Add Activity</button>
+              </form>
+              
+          </div>
+      </div>
+  </div>
+</div>
