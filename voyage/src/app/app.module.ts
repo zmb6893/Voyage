@@ -21,6 +21,7 @@ import { LeftPanelComponent } from './left-panel/left-panel.component';
 import { ChoosePlanComponent } from './choose-plan/choose-plan.component';
 import { TripCardComponent } from './trip-card/trip-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TripService } from '../trip.service';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [TripService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
