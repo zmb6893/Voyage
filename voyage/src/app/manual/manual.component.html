@@ -11,14 +11,27 @@
     </mat-form-field>
 
     <mat-form-field>
+        <mat-label>Start Date</mat-label>
+        <input matInput [matDatepicker]="startDatePicker" formControlName="startDate" placeholder="Choose a Start Date" (dateChange)="onStartDateChange($event)">
+        <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
+        <mat-datepicker #startDatePicker></mat-datepicker>
+    </mat-form-field>
+    
+    <mat-form-field>
+        <mat-label>End Date</mat-label>
+        <input matInput [matDatepicker]="endDatePicker" formControlName="endDate" placeholder="Choose an End Date" (dateChange)="onEndDateChange($event)">
+        <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
+        <mat-datepicker #endDatePicker></mat-datepicker>
+    </mat-form-field> 
+
+    <mat-form-field>
         <mat-label>Budget</mat-label>
         <input matInput formControlName="budget" placeholder="Budget" type="number" required>
     </mat-form-field>
 
     <mat-checkbox formControlName="private" placeholder="Private" type="boolean">
         <mat-label class="black-label">Make this Trip Private</mat-label>
-    </mat-checkbox>
-      
+    </mat-checkbox>      
 
     <br>
     <button mat-raised-button color="primary" type="submit">Submit</button>
