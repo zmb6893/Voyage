@@ -24,8 +24,14 @@
     width: 10rem;
 }
 
+.horizontal {
+    display: flex;
+    margin-left: 55rem;
+    margin-bottom:0rem
+}   
+
 .nav-text {
-    height:8.71rem;
+    height:10rem;
     margin-right: -10rem;
     margin-top: -10rem;
     margin-left: auto;
@@ -40,6 +46,8 @@
     font-style: normal;
     font-weight: 200;
     line-height: normal;
+    clip-path: inset(0 10rem 0 0);
+    justify-content: center;
 }
 
 .trip-dropdown {
