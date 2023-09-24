@@ -1,25 +1,41 @@
-<p>Let's Plan a Trip!</p>
-<form [formGroup]="tripForm" (ngSubmit)="onSubmit()">
-    <mat-form-field>
-      <mat-label>Name</mat-label>
-      <input matInput formControlName="name" placeholder="Trip Name" required>
-    </mat-form-field>
 
-    <mat-form-field>
-        <mat-label>Location</mat-label>
-        <input matInput formControlName="location" placeholder="Location" required>
-    </mat-form-field>
-
-    <mat-form-field>
-        <mat-label>Budget</mat-label>
-        <input matInput formControlName="budget" placeholder="Budget" type="number" required>
-    </mat-form-field>
-
-    <mat-checkbox formControlName="private" placeholder="Private" type="boolean">
-        <mat-label class="black-label">Make this Trip Private</mat-label>
-    </mat-checkbox>
-      
-
-    <br>
-    <button mat-raised-button color="primary" type="submit">Submit</button>
-</form>
+<div class="main">
+    <app-nav-bar></app-nav-bar>
+    <div class="content">
+        <app-left-panel></app-left-panel>
+        <div class="box-2">
+            <div class="choice-container">
+                <h1>New Trip</h1>
+                <p>Plan By Yourself</p>
+                <form [formGroup]="tripForm" (ngSubmit)="onSubmit()" class="card">
+                    
+                    <h1>Name of Trip</h1>
+                    <mat-form-field appearance="outline" style="font-size: 30px;">
+                        <mat-label>Name of Your Trip</mat-label>
+                        <input matInput formControlName="name" placeholder="Trip Name" required>
+                    </mat-form-field>
+                
+                    <h1>Where are you going?</h1>
+                    <mat-form-field appearance="outline" style="font-size: 30px;">
+                        <mat-label>City, State</mat-label>
+                        <input matInput formControlName="location" placeholder="Location" required>
+                    </mat-form-field>
+                
+                    <h1>How much do you plan to spend?</h1>
+                    <mat-form-field appearance="outline" style="font-size: 30px;">
+                        <mat-label>Budget</mat-label>
+                        <input matInput formControlName="budget" placeholder="Budget" type="number" required>
+                    </mat-form-field>
+                    
+                    <mat-checkbox formControlName="private" placeholder="Private" type="boolean">
+                        <mat-label class="black-label" style="font-size: 25px;">Make this Trip Private</mat-label>
+                    </mat-checkbox>
+                      
+                
+                    <br>
+                    <button mat-raised-button color="primary" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
