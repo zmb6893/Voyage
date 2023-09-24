@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     DashboardComponent,
     PlanForMeComponent,
     ManualComponent,
-    ActivityFormComponent
+    ActivityFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

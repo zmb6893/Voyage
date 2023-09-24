@@ -1,0 +1,240 @@
+.trips h1 {
+    margin-top: .5rem;
+    color:#F5F5F5;
+    text-align: center;
+}
+.main {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.navbar {
+    margin-top:-5rem;
+    background: #039DB0;
+    height: 10rem;
+    width:100%;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    background: #039DB0;
+    margin-top:-5rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+.horizontal {
+    display: flex;
+    margin-left: 55rem;
+    margin-bottom:0rem
+}   
+
+.nav-text {
+    height:10rem;
+    margin-right: -10rem;
+    margin-top: -10rem;
+    margin-left: auto;
+    width: 98%;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    background: #028090;
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Bayon;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    clip-path: inset(0 10rem 0 0);
+    justify-content: center;
+}
+
+.trip-dropdown {
+
+}
+
+.profile-selection {
+    
+}
+
+.content {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.left-panel {
+    display:block;
+    width: 20%;
+    height: 53rem;
+    border-radius: 30px;
+    background: #028090;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    width:100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Bayon;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 20;
+    line-height: normal;
+}
+
+.menus {
+    background: #039DB0;
+    width:100%;
+    height: 38rem;
+    border-radius: 30px;
+    text-align: center;
+    color:#F5F5F5
+}
+
+.mid-section {
+    width: 45%;
+    height: 53rem;
+    display:block;
+    margin-left:4%;
+    margin-right:4%;
+}
+
+.trip-preview {
+    background-color: #028090;
+    border-radius: 30px;
+    height:15rem;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+}
+.upcoming-events {
+    background-image: url('../../assets/BostonLayered.png');
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color:#F5F5F5;
+}
+
+.event-text {
+    margin-left: 4rem;
+    margin-top: 1rem;
+    flex-direction: column;
+    display: flex;
+}
+
+.trips {
+    margin-top: 5%;
+    background-color: #028090;
+    border-radius: 30px;
+    height:36rem;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.trip-menu {
+    background: #F5F5F5;
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    color: #028090;
+    border-radius: 30px;
+    font-family: Bayon;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 20;
+    line-height: normal;
+    margin-right: -2rem;
+    margin-left: auto;
+    margin-top: 4rem;
+    clip-path: inset(0 2rem 0 0);
+}
+
+.right-panel {
+    display:block;
+    width: 25%;
+    height: 53rem;
+}
+
+.friend-activity {
+    border-radius: 30px;
+    height:39rem;
+    background: #028090;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    color:#F5F5F5;
+    text-align: center;
+}
+.count-down-container {
+    margin-top:2rem;
+    border-radius: 30px;
+    background: #028090;
+    height: 12rem;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.count-down {
+    height: 80%;
+    width: 70%;
+    background-image: url('../../assets/BostonBottom.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#F5F5F5;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+.trips-container {
+    border-radius: 30px;
+    background: #039DB0;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right:3rem;
+    height: 27rem;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.trip-collapsed {
+    margin-top: 1rem;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    height: 3rem;
+}
+
+.trip-expanded {
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    height:13rem;
+    margin-top: 1rem;
+}
+
+.friend-trip-container {
+    border-radius: 30px;
+    background: #039DB0;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    width: 17rem;
+    height:70%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.friend-trip {
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    height: 7rem;
+    width: 90%;
+    margin: 1rem;
+}
+
