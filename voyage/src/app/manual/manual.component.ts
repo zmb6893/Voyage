@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormsModule } from '@angular/forms';
 import { Trip } from '../../models/trip.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-manual',
@@ -11,7 +12,7 @@ export class ManualComponent implements OnInit{
   tripForm!: FormGroup;
   private = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private router: Router) {}
 
   ngOnInit(): void {
     this.tripForm = this.formBuilder.group({
@@ -27,6 +28,8 @@ export class ManualComponent implements OnInit{
       const tripData: Trip = this.tripForm.value as Trip;
       console.log(tripData);
     }
+
+    this.router.navigate(['/activity-form']);
   }
 
 }
