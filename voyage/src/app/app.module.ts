@@ -23,6 +23,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LeftPanelComponent } from './left-panel/left-panel.component';
 import { ChoosePlanComponent } from './choose-plan/choose-plan.component';
 import { TripCardComponent } from './trip-card/trip-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TripService } from '../trip.service';
 import { ActivityCardComponent } from './activity-card/activity-card.component';
 
 @NgModule({
@@ -50,11 +52,12 @@ import { ActivityCardComponent } from './activity-card/activity-card.component';
     BrowserAnimationsModule,
     MatCheckboxModule,
     FormsModule,
+    HttpClientModule
     MatDatepickerModule,
     MatNativeDateModule,
     MatSlideToggleModule
   ],
-  providers: [],
+  providers: [TripService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

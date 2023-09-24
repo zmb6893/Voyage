@@ -3,7 +3,7 @@ import { DateRange } from "./dateRange.model";
 import { Location } from "./location";
 
 export interface Trip {
-    id: number;
+    id: string;
     name: String;
     dateRange: DateRange;
     activities: Array<Activity>;

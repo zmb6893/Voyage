@@ -4,4 +4,5 @@ export interface Activity {
     time: Date;
     price: number;
     location: Location;
+    tripId: string;
 }
