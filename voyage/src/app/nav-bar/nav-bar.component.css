@@ -1,0 +1,49 @@
+.navbar {
+    margin-top:-5rem;
+    background: #039DB0;
+    height: 10rem;
+    width:100%;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    background: #039DB0;
+    margin-top:-5rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+.horizontal {
+    display: flex;
+    margin-left: 55rem;
+    margin-bottom:0rem
+}   
+
+
+.nav-text {
+    height:10rem;
+    margin-right: -10rem;
+    margin-top: -10rem;
+    margin-left: auto;
+    width: 98%;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    background: #028090;
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Bayon;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    clip-path: inset(0 10rem 0 0);
+    justify-content: center;
+}
+
+.trip-dropdown {
+
+}
+
+.profile-selection {
+    
+}
