@@ -1,2 +1,25 @@
-<p>manual works!</p>
-<app-activity-form></app-activity-form>
+<p>Let's Plan a Trip!</p>
+<form [formGroup]="tripForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" placeholder="Trip Name" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Location</mat-label>
+        <input matInput formControlName="location" placeholder="Location" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Budget</mat-label>
+        <input matInput formControlName="budget" placeholder="Budget" type="number" required>
+    </mat-form-field>
+
+    <mat-checkbox formControlName="private" placeholder="Private" type="boolean">
+        <mat-label class="black-label">Make this Trip Private</mat-label>
+    </mat-checkbox>
+      
+
+    <br>
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+</form>
