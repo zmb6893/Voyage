@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LeftPanelComponent } from './left-panel/left-panel.component';
+import { ChoosePlanComponent } from './choose-plan/choose-plan.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LeftPanelComponent } from './left-panel/left-panel.component';
     ActivityFormComponent,
     HomeComponent,
     NavBarComponent,
-    LeftPanelComponent
+    LeftPanelComponent,
+    ChoosePlanComponent
   ],
   imports: [
     BrowserModule,
