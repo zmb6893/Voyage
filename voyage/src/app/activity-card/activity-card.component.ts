@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./activity-card.component.css']
 })
 export class ActivityCardComponent {
-  name: String = 'name';
-  description: String = 'description';
-  time: String = 'time';
-  otherNotes: String = 'othernotes';
+  name: String = 'sunken garden';
+  description: String = 'visit the sunken gardens and castle';
+  time: String = '2:00pm';
+  otherNotes: String = 'fun stuff';
   collapsed: boolean = true;
 
   toggleCollapse() {
