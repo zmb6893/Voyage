@@ -1,0 +1,127 @@
+.main {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.navbar {
+    margin-top:-5rem;
+    background: #039DB0;
+    height: 10rem;
+    width:100%;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    background: #039DB0;
+    margin-top:-5rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+.nav-text {
+    height:8.71rem;
+    margin-right: -10rem;
+    margin-top: -10rem;
+    margin-left: auto;
+    width: 98%;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    background: #028090;
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Bayon;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.trip-dropdown {
+
+}
+
+.profile-selection {
+    
+}
+
+.content {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.left-panel {
+    display:block;
+    width: 20%;
+    height: 43rem;
+    border-radius: 30px;
+    background: #028090;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    width:100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Bayon;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 20;
+    line-height: normal;
+}
+
+.menus {
+    background: #039DB0;
+    width:100%;
+    height: 28rem;
+    border-radius: 30px;
+}
+
+.mid-section {
+    width: 45%;
+    height: 43rem;
+    display:block;
+    margin-left:4%;
+    margin-right:4%;
+}
+
+.trip-preview {
+    background-color: #028090;
+    border-radius: 30px;
+    height:15rem;
+    
+}
+
+.trips {
+    margin-top: 5%;
+    background-color: #028090;
+    border-radius: 30px;
+    height:26rem;
+}
+
+.right-panel {
+    display:block;
+    width: 25%;
+    height: 43rem;
+}
+
+.friend-activity {
+    border-radius: 30px;
+    height:29rem;
+    background: #028090;
+}
+.count-down {
+    margin-top:2rem;
+    border-radius: 30px;
+    background: #028090;
+    height: 12rem;
+}
