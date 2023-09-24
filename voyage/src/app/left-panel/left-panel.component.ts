@@ -12,4 +12,8 @@ export class LeftPanelComponent {
   createTrip() {
     this.router.navigate(['/choose-plan']);
   }
+  
+  goToMyTrips() {
+    this.router.navigate(['/home']);
+  }
 }

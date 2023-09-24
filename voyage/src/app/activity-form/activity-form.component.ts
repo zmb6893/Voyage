@@ -34,13 +34,13 @@ export class ActivityFormComponent implements OnInit {
       location: [null, Validators.required],
       time: [null, Validators.required],
       tripId: tripId
+
     });
   }
 
   onSubmit() {
     console.log("SUBMITTED", this.activityForm);
     const activityData: Activity = this.activityForm.value as Activity;
-    
     this.tripService.addActivity(activityData, activityData.tripId);
       // this.tripService.getTripById(activityData.tripId);
   }  

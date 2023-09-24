@@ -15,6 +15,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LeftPanelComponent } from './left-panel/left-panel.component';
@@ -22,6 +25,7 @@ import { ChoosePlanComponent } from './choose-plan/choose-plan.component';
 import { TripCardComponent } from './trip-card/trip-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TripService } from '../trip.service';
+import { ActivityCardComponent } from './activity-card/activity-card.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,8 @@ import { TripService } from '../trip.service';
     NavBarComponent,
     LeftPanelComponent,
     ChoosePlanComponent,
-    TripCardComponent
+    TripCardComponent,
+    ActivityCardComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +53,9 @@ import { TripService } from '../trip.service';
     MatCheckboxModule,
     FormsModule,
     HttpClientModule
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSlideToggleModule
   ],
   providers: [TripService],
   bootstrap: [AppComponent]

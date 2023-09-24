@@ -1,0 +1,11 @@
+<div *ngIf="!collapsed" class="activity-expanded" (click)="toggleCollapse()">
+    <p>{{name}}<p>
+    <p>{{description}}</p>
+    <p>{{time}}</p>
+    <p>{{otherNotes}}</p>
+</div>
+
+<div *ngIf="collapsed"  class="activity-collapsed" (click)="toggleCollapse()">
+    <p>{{name}}<p>
+    <p>{{description}}</p>
+</div>

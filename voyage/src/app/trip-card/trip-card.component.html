@@ -1,11 +1,19 @@
 
 <div *ngIf="!collapsed" class="trip-expanded" (click)="toggleCollapse()">
-    <p>{{tripName}}<p>
-    <p>{{date}}</p>
-    <p>{{street}}, {{city}}, {{state}}, {{zip}}</p>
+    <div class="horizontal">
+        <p style=" display: inline; margin-left:0; margin-right:auto">{{tripName}}<p>
+        <p style=" display: inline; margin-right:0; margin-left:auto">{{date}}</p>
+    </div>
+    <div class="horizontal">
+        <p style=" display: inline; margin-left:0; margin-right:auto">{{street}}, {{city}}, {{state}}, {{zip}}</p>
+        <app-activity-card style=" display: inline; margin-right:0; margin-left:auto"></app-activity-card>
+    </div>
 </div>
 
 <div *ngIf="collapsed"  class="trip-collapsed" (click)="toggleCollapse()">
-    <p>{{tripName}}<p>
-    <p>{{date}}</p>
+    <div class="horizontal">
+        <p style="margin-left:0; margin-right:auto">{{tripName}}<p>
+        <p style="margin-right:0; margin-left:auto">{{date}}</p>
+    </div>
+    
 </div>

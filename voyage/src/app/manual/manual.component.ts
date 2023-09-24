@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { TripService } from '../../trip.service';
 import { v4 as uuidv4 } from 'uuid';
 import { Activity } from '../../models/activity.model';
+import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-manual',
@@ -25,7 +26,9 @@ export class ManualComponent implements OnInit {
     this.tripForm = this.formBuilder.group({
       id: [uuidv4()], // Generate a unique ID for each trip
       name: ['', Validators.required],
-      location: ['', Validators.required],
+      location: [null, Validators.required],
+      startDate: [null, Validators.required],
+      endDate: [null, Validators.required],
       budget: [0, [Validators.required, Validators.min(0)]],
       private: [false],
       activities: [Array<Activity>]
@@ -49,5 +52,16 @@ export class ManualComponent implements OnInit {
         }
       );
     }
+    this.router.navigate(['/activity-form']);
+    //this.router.navigate(['/choose-plan']);
   }
+
+  onStartDateChange(event: MatDatepickerInputEvent<Date>): void {
+    this.tripForm.get('startDate')?.setValue(event.value);
+  }
+  
+  onEndDateChange(event: MatDatepickerInputEvent<Date>): void {
+    this.tripForm.get('endDate')?.setValue(event.value);
+  }
+  
 }
