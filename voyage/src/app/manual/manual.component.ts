@@ -17,7 +17,7 @@ export class ManualComponent implements OnInit{
   ngOnInit(): void {
     this.tripForm = this.formBuilder.group({
       name: ['', Validators.required],
-      location: [{name: '', zipcode: '', address: '', website: '', hours: ''}, Validators.required],
+      location: ['', Validators.required],
       budget: [0, [Validators.required, Validators.min(0)]],
       private: [false]
     });
