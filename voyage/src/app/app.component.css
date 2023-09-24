@@ -1,7 +1,7 @@
 .main {
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -57,7 +57,7 @@
 .left-panel {
     display:block;
     width: 20%;
-    height: 43rem;
+    height: 53rem;
     border-radius: 30px;
     background: #028090;
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
@@ -82,13 +82,15 @@
 .menus {
     background: #039DB0;
     width:100%;
-    height: 28rem;
+    height: 38rem;
     border-radius: 30px;
+    text-align: center;
+    color:#F5F5F5
 }
 
 .mid-section {
     width: 45%;
-    height: 43rem;
+    height: 53rem;
     display:block;
     margin-left:4%;
     margin-right:4%;
@@ -105,18 +107,36 @@
     margin-top: 5%;
     background-color: #028090;
     border-radius: 30px;
-    height:26rem;
+    height:36rem;
+}
+
+.trip-menu {
+    background: #F5F5F5;
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    color: #028090;
+    border-radius: 30px;
+    font-family: Bayon;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 20;
+    line-height: normal;
+    margin-right: -2rem;
+    margin-left: auto;
+    margin-top: 4rem;
+    clip-path: inset(0 2rem 0 0);
 }
 
 .right-panel {
     display:block;
     width: 25%;
-    height: 43rem;
+    height: 53rem;
 }
 
 .friend-activity {
     border-radius: 30px;
-    height:29rem;
+    height:39rem;
     background: #028090;
 }
 .count-down {
