@@ -17,7 +17,8 @@ export class ActivityFormComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
-    private tripService: TripService
+    private tripService: TripService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -43,5 +44,6 @@ export class ActivityFormComponent implements OnInit {
     const activityData: Activity = this.activityForm.value as Activity;
     this.tripService.addActivity(activityData, activityData.tripId);
       // this.tripService.getTripById(activityData.tripId);
+    this.router.navigate(['/home'])
   }  
 }
