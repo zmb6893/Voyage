@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LeftPanelComponent } from './left-panel/left-panel.component';
 import { ChoosePlanComponent } from './choose-plan/choose-plan.component';
+import { TripCardComponent } from './trip-card/trip-card.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ChoosePlanComponent } from './choose-plan/choose-plan.component';
     HomeComponent,
     NavBarComponent,
     LeftPanelComponent,
-    ChoosePlanComponent
+    ChoosePlanComponent,
+    TripCardComponent
   ],
   imports: [
     BrowserModule,
