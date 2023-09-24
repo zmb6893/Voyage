@@ -14,3 +14,9 @@
     margin-top: 1rem;
     color: #028090;
 }
+
+.horizontal {
+    display: flex;
+    text-align: center;
+    padding: 3px;
+}
