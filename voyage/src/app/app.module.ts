@@ -15,6 +15,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LeftPanelComponent } from './left-panel/left-panel.component';
@@ -46,7 +49,10 @@ import { ActivityCardComponent } from './activity-card/activity-card.component';
     MatButtonModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

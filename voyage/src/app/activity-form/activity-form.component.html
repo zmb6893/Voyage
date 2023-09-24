@@ -1,5 +1,3 @@
-
-
 <div class="main">
   <app-nav-bar></app-nav-bar>
   <div class="content">
@@ -26,12 +24,16 @@
                   <mat-label>Price</mat-label>
                   <input matInput formControlName="price" placeholder="Price" type="number" required>
                 </mat-form-field>
+
+                <mat-form-field>
+                  <mat-label>Time</mat-label>
+                  <input matInput formControlName="time" placeholder="Time" type="number" required>
+                </mat-form-field>
               
                 <!-- Add form controls for time, location, etc. here -->
                 
                 <button mat-raised-button color="primary" type="submit">Add Activity</button>
               </form>
-              
           </div>
       </div>
   </div>
