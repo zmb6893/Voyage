@@ -5,11 +5,21 @@
     </mat-form-field>
   
     <mat-form-field>
+      <mat-label>Location</mat-label>
+      <input matInput formControlName="location" placeholder="Location" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Time</mat-label>
+      <input matInput [matDatepicker]="timePicker" formControlName="time" placeholder="What Time is this Activity?" (dateChange)="onTimeChange($event)">
+      <mat-datepicker-toggle matSuffix [for]="timePicker"></mat-datepicker-toggle>
+      <mat-datepicker #timePicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
       <mat-label>Price</mat-label>
       <input matInput formControlName="price" placeholder="Price" type="number" required>
     </mat-form-field>
-  
-    <!-- Add form controls for time, location, etc. here -->
     
     <button mat-raised-button color="primary" type="submit">Submit</button>
   </form>

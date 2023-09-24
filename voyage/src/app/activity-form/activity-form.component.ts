@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Activity } from 'src/models/activity.model';
+import { Router } from '@angular/router';
+import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-activity-form',
@@ -16,7 +18,8 @@ export class ActivityFormComponent implements OnInit {
     this.activityForm = this.formBuilder.group({
       name: ['', Validators.required],
       price: [0, [Validators.required, Validators.min(0)]],
-      // Add form controls for time, location, etc. here
+      location: [null, Validators.required],
+      time: [null, Validators.required]
     });
   }
 
@@ -25,5 +28,9 @@ export class ActivityFormComponent implements OnInit {
       const activityData: Activity = this.activityForm.value as Activity;
       console.log(activityData);
     }
+  }
+
+  onTimeChange(event: MatDatepickerInputEvent<Date>): void {
+    this.activityForm.get('time')?.setValue(event.value);
   }
 }
