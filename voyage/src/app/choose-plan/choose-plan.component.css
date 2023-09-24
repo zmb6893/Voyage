@@ -1,7 +1,3 @@
-.black-label {
-    color: #039DB0; /* Set the text color to black */
-  }
-  
 .main {
     margin: 0px;
     padding: 0px;
@@ -37,19 +33,22 @@
     color: #F5F5F5;
 }
 
+.options {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
 .card {
     border-radius: 30px;
     background: #FFF;
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
     height: 34rem;
-    width: 40rem;
+    width: 20rem;
     color: #039DB0;
     text-align: center;
     font-family: Bayon;
     font-style: normal;
     line-height: normal;
     margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    padding:2rem;
 }

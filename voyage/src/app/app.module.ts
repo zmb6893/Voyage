@@ -18,6 +18,12 @@ import { FormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { HomeComponent } from './home/home.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { LeftPanelComponent } from './left-panel/left-panel.component';
+import { ChoosePlanComponent } from './choose-plan/choose-plan.component';
+import { TripCardComponent } from './trip-card/trip-card.component';
+import { ActivityCardComponent } from './activity-card/activity-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +31,13 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     DashboardComponent,
     PlanForMeComponent,
     ManualComponent,
-    ActivityFormComponent
+    ActivityFormComponent,
+    HomeComponent,
+    NavBarComponent,
+    LeftPanelComponent,
+    ChoosePlanComponent,
+    TripCardComponent,
+    ActivityCardComponent
   ],
   imports: [
     BrowserModule,
