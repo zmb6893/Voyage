@@ -1,19 +1,11 @@
 
-<ng-container *ngIf="collapsed; else expanded">
-    <ng-container *ngTemplateOutlet="collapsed"></ng-container>
-  </ng-container>
-  
-<ng-template #expanded>
-    <div class="trip-expanded">
-        <p>{{tripName}}<p>
-        <p>{{date}}</p>
-        <p>{{street}}, {{city}}, {{state}}, {{zip}}</p>
-    </div>
-</ng-template>
+<div *ngIf="!collapsed" class="trip-expanded" (click)="toggleCollapse()">
+    <p>{{tripName}}<p>
+    <p>{{date}}</p>
+    <p>{{street}}, {{city}}, {{state}}, {{zip}}</p>
+</div>
 
-<ng-template #collapsed>
-    <div class="trip-collapsed">
-        <p>{{tripName}}<p>
-        <p>{{date}}</p>
-    </div>
-</ng-template>
+<div *ngIf="collapsed"  class="trip-collapsed" (click)="toggleCollapse()">
+    <p>{{tripName}}<p>
+    <p>{{date}}</p>
+</div>

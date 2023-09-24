@@ -13,4 +13,9 @@ export class TripCardComponent {
   city: String = "city";
   state: String = "state";
   zip: String = "zipcode";
+
+  toggleCollapse() {
+    console.log(this.collapsed)
+    this.collapsed = !this.collapsed;
+  }
 }
