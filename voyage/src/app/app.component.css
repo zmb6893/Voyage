@@ -113,6 +113,7 @@
     background-color: #028090;
     border-radius: 30px;
     height:15rem;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
 }
 .upcoming-events {
     background-image: url('../assets/BostonLayered.png');
@@ -136,6 +137,7 @@
     background-color: #028090;
     border-radius: 30px;
     height:36rem;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
 }
 
 .trip-menu {
@@ -166,12 +168,30 @@
     border-radius: 30px;
     height:39rem;
     background: #028090;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    color:#F5F5F5;
+    text-align: center;
 }
-.count-down {
+.count-down-container {
     margin-top:2rem;
     border-radius: 30px;
     background: #028090;
     height: 12rem;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.count-down {
+    height: 80%;
+    width: 70%;
+    background-image: url('../assets/BostonBottom.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#F5F5F5;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
 }
 
 .trips-container {
@@ -182,6 +202,7 @@
     margin-left: 1rem;
     margin-right:3rem;
     height: 27rem;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
 }
 
 .trip-collapsed {
@@ -197,3 +218,23 @@
     height:13rem;
     margin-top: 1rem;
 }
+
+.friend-trip-container {
+    border-radius: 30px;
+    background: #039DB0;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    width: 17rem;
+    height:70%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.friend-trip {
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.08);
+    height: 7rem;
+    width: 90%;
+    margin: 1rem;
+}
+
