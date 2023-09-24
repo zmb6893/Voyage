@@ -5,72 +5,52 @@
         <app-left-panel></app-left-panel>
         <div class="box-2">
             <div class="choice-container">
-                <h1>New Trip</h1>
+                <h2>New Trip</h2>
                 <p>Plan By Yourself</p>
-                <form [formGroup]="tripForm" (ngSubmit)="onSubmit()" class="card">
-                    
-                    <h1>Name of Trip</h1>
-                    <mat-form-field appearance="outline" style="font-size: 30px;">
-                        <mat-label>Name of Your Trip</mat-label>
-                        <input matInput formControlName="name" placeholder="Trip Name" required>
+              
+                <form class="card" [formGroup]="tripForm" (ngSubmit)="onSubmit()">
+
+                  <h2>Name of Trip</h2>
+                  <mat-form-field appearance="outline" style="font-size: 30px;">
+                      <mat-label>Name of Your Trip</mat-label>
+                      <input matInput formControlName="name" placeholder="Trip Name" required>
+                  </mat-form-field>
+              
+                  <h2>Where are you going?</h2>
+                  <mat-form-field appearance="outline" style="font-size: 30px;">
+                      <mat-label>City, State</mat-label>
+                      <input matInput formControlName="location" placeholder="Location" required>
+                  </mat-form-field>
+              
+
+                  <h2>When are you going?</h2>
+                  <mat-form-field>
+                      <mat-label>Start Date</mat-label>
+                      <input matInput [matDatepicker]="startDatePicker" formControlName="startDate" placeholder="Choose a Start Date" (dateChange)="onStartDateChange($event)">
+                      <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
+                      <mat-datepicker #startDatePicker></mat-datepicker>
                     </mat-form-field>
-                
-                    <h1>Where are you going?</h1>
-                    <mat-form-field appearance="outline" style="font-size: 30px;">
-                        <mat-label>City, State</mat-label>
-                        <input matInput formControlName="location" placeholder="Location" required>
+
+                    <mat-form-field>
+                      <mat-label>End Date</mat-label>
+                      <input matInput [matDatepicker]="endDatePicker" formControlName="endDate" placeholder="Choose an End Date" (dateChange)="onEndDateChange($event)">
+                      <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
+                      <mat-datepicker #endDatePicker></mat-datepicker>
                     </mat-form-field>
-                
-                    <h1>How much do you plan to spend?</h1>
+
+
+                    <h2>How much do you plan to spend?</h2>
                     <mat-form-field appearance="outline" style="font-size: 30px;">
                         <mat-label>Budget</mat-label>
                         <input matInput formControlName="budget" placeholder="Budget" type="number" required>
                     </mat-form-field>
-                    
-                    <mat-checkbox formControlName="private" placeholder="Private" type="boolean">
-                        <mat-label class="black-label" style="font-size: 25px;">Make this Trip Private</mat-label>
-                    </mat-checkbox>
-                      
-                
-                    <br>
-                    <button mat-raised-button color="primary" type="submit">Submit</button>
-                </form>
-              
-              <!--Merge Request here-->
-              <mat-form-field>
-                <mat-label>Location</mat-label>
-                    <input matInput formControlName="location" placeholder="Location" required>
-                </mat-form-field>
 
-                <mat-form-field>
-                    <mat-label>Start Date</mat-label>
-                    <input matInput [matDatepicker]="startDatePicker" formControlName="startDate" placeholder="Choose a Start Date" (dateChange)="onStartDateChange($event)">
-                    <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
-                    <mat-datepicker #startDatePicker></mat-datepicker>
-                  </mat-form-field>
+                  <mat-label>Make Private</mat-label>
+                  <mat-slide-toggle formControlName="private"></mat-slide-toggle>
 
-                  <mat-form-field>
-                    <mat-label>End Date</mat-label>
-                    <input matInput [matDatepicker]="endDatePicker" formControlName="endDate" placeholder="Choose an End Date" (dateChange)="onEndDateChange($event)">
-                    <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
-                    <mat-datepicker #endDatePicker></mat-datepicker>
-                  </mat-form-field>
-
-
-                <mat-form-field>
-                    <mat-label>Budget</mat-label>
-                    <input matInput formControlName="budget" placeholder="Budget" type="number" required>
-                </mat-form-field>
-
-                <mat-label>Private</mat-label>
-                <mat-slide-toggle formControlName="private"></mat-slide-toggle>
-
-
-
-                <br>
-                <button mat-raised-button color="primary" type="submit">Submit</button>
-            </form>
-          <!--Merge Request here-->
+                  <br>
+                  <button mat-raised-button color="primary" type="submit">Submit</button>
+              </form>
             </div>
         </div>
     </div>
