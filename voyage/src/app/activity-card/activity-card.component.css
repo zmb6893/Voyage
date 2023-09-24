@@ -1,4 +1,4 @@
-.trip-collapsed {
+.activity-collapsed {
     margin-top: 1rem;
     background-color: #F5F5F5;
     border-radius: 15px;
@@ -7,7 +7,7 @@
     
 }
 
-.trip-expanded {
+.activity-expanded {
     background-color: #F5F5F5;
     border-radius: 15px;
     height:13rem;

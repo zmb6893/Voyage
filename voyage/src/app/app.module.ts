@@ -20,6 +20,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LeftPanelComponent } from './left-panel/left-panel.component';
 import { ChoosePlanComponent } from './choose-plan/choose-plan.component';
 import { TripCardComponent } from './trip-card/trip-card.component';
+import { ActivityCardComponent } from './activity-card/activity-card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TripCardComponent } from './trip-card/trip-card.component';
     NavBarComponent,
     LeftPanelComponent,
     ChoosePlanComponent,
-    TripCardComponent
+    TripCardComponent,
+    ActivityCardComponent
   ],
   imports: [
     BrowserModule,
