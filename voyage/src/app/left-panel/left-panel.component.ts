@@ -10,6 +10,6 @@ export class LeftPanelComponent {
   constructor(private router: Router) { }
 
   createTrip() {
-    this.router.navigate(['/trip-form']);
+    this.router.navigate(['/choose-plan']);
   }
 }
