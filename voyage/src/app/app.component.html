@@ -1,7 +1,89 @@
-<router-outlet></router-outlet>
-
 <h1>Manual Component</h1>
 <app-manual></app-manual>
+<router-outlet></router-outlet>
 
-<h1>Plan For Me Component</h1>
-<app-plan-for-me></app-plan-for-me>
+<div class="main">
+    <div class="navbar">
+        <div class="logo"></div>
+        <div class="nav-text">
+            <div class="horizontal">
+                <div class="trip-dropdown">
+                    <h1 style="margin:2rem ; margin-top:7rem">Trips</h1>
+                </div>
+                <div class="profile-selection">
+                    <h1 style="margin:2rem; margin-top:7rem">Profile</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-panel">
+            <div class="user-info">
+                <span>
+                    <svg height="150" width="150">
+                        <circle cx="70" cy="90" r="60" stroke="grey" stroke-width="3" fill="white" />
+                    </svg> 
+                </span>
+                <p> First Last</p>
+                <p> Lorem Ipsum Dolor</p>
+            </div>
+            <div class="menus">
+                <div class="trip-menu">
+                    <p>Trips</p>
+                    <p>My Trips</p>
+                    <p>Friend's Trips</p>
+                    <p>New Trips</p>
+                </div>
+                <p>Friends</p>
+                <p>Settings</p>
+            </div>
+            <img src="../assets/seaweed.png" style="position: relative; left:5rem; bottom: -1rem;">
+        </div>
+
+        <div class="mid-section">
+            <div class="trip-preview">
+                <br><br>
+                <div class="upcoming-events">
+                    <div class="event-text">
+                        <h1>Boston</h1>
+                        <h3> Lorem ipsum 6/22/2023</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trips">
+                <h1>My Trips</h1>
+                <div class="trips-container">
+                    <div class="trip-expanded">
+
+                    </div>
+                    <div class="trip-collapsed">
+
+                    </div>
+                    <div class="trip-collapsed">
+
+                    </div>
+                    <div class="trip-collapsed">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="friend-activity">
+                <h1>Friend Activity</h1>
+                <p>Find Friends</p>
+                <div class="friend-trip-container">
+                    <div class="friend-trip"></div>
+                    <div class="friend-trip"></div>
+                    <div class="friend-trip"></div>
+                </div>
+            </div>
+            <div class="count-down-container">
+                <div class="count-down"></div>
+            </div>
+            <img src="../assets/seaweed.png" style="position: relative; right:5rem; bottom: 12rem;">
+        </div>
+    </div>
+</div>
