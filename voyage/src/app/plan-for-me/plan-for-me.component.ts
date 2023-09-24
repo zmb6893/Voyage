@@ -1,12 +1,5 @@
-import { Component } from '@angular/core';
-import { apiKey } from './api-key';
-import OpenAI from 'openai';
-
-const openai = new OpenAI({
-  apiKey: apiKey
-})
-
-
+import { Component, OnInit } from '@angular/core';
+import { OpenAiService } from '../open-ai.service';
 
 @Component({
   selector: 'app-plan-for-me',
@@ -14,6 +7,19 @@ const openai = new OpenAI({
   styleUrls: ['./plan-for-me.component.css']
 })
 
-export class PlanForMeComponent {
-  
+export class PlanForMeComponent implements OnInit {
+  isLoading = false;
+  response : Object = {};
+
+  constructor(private openAiService: OpenAiService) { }
+
+  ngOnInit(): void { }
+
+  async askQuestion() {
+    this.isLoading = true;
+
+    const chatCompletion = await this.openAiService.question();
+    console.log(chatCompletion.choices[0].message);
+
+  }
 }

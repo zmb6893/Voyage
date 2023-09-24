@@ -1,1 +1,4 @@
 <p>plan-for-me works!</p>
+<button (click)="askQuestion()" [disabled]="isLoading">Ask Question</button>
+<div *ngIf="isLoading">Loading...</div>
+<p>{{this.response}}</p>
