@@ -1,0 +1,16 @@
+<form [formGroup]="activityForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" placeholder="Activity Name" required>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Price</mat-label>
+      <input matInput formControlName="price" placeholder="Price" type="number" required>
+    </mat-form-field>
+  
+    <!-- Add form controls for time, location, etc. here -->
+    
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+  
