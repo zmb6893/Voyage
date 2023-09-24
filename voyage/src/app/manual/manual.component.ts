@@ -33,6 +33,7 @@ export class ManualComponent implements OnInit{
     }
 
     this.router.navigate(['/activity-form']);
+    //this.router.navigate(['/choose-plan']);
   }
 
   onStartDateChange(event: MatDatepickerInputEvent<Date>): void {
