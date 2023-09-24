@@ -1,5 +1,3 @@
-<h1>Manual Component</h1>
-<app-manual></app-manual>
 <router-outlet></router-outlet>
 
 <div class="main">
@@ -32,7 +30,7 @@
                     <p>Trips</p>
                     <p>My Trips</p>
                     <p>Friend's Trips</p>
-                    <p>New Trips</p>
+                    <p (click)="createTrip()">New Trip</p>
                 </div>
                 <p>Friends</p>
                 <p>Settings</p>
